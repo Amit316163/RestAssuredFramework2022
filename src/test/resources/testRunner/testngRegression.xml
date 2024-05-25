@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="API Regression suite" >
+<listeners>
+<listener class-name="com.qa.gorest.listeners.ExtentReportListener"></listener>
+</listeners>
+
+ <test name="Go Rest API Test_Create User">
+	<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.CreateUserTest" />
+		</classes>
+	</test> 
+
+	<!--   <test name="Go Rest API Test_Get Call">
+	<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.GetUserTest" />
+		</classes>
+	</test>-->
+	
+	
+	
+	
+<!-- 	 <test name="Fake Store API Test">
+	<parameter name="baseURI" value="https://fakestoreapi.com"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.FakeStore" />
+		</classes>
+	</test>
+	
+	
+	 <test name="ReqRes API Test">
+	<parameter name="baseURI" value="https://reqres.in"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.ReqRes" />
+		</classes>
+	</test>-->
+	
+	 <!-- <test name="Schema Test">
+	<parameter name="baseURI" value="https://gorest.co.in"></parameter>
+		<classes>
+			<class name="com.qa.gorest.tests.SchemaValidation" />
+		</classes>
+	</test>-->
+</suite> 
